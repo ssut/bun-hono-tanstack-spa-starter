@@ -1,0 +1,16 @@
+{
+  "format_on_save": "on",
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["tsgo", "vtsls"]
+    }
+  },
+  "lsp": {
+    "biome": {
+      "binary": {
+        "path": "./node_modules/@biomejs/biome/bin/biome",
+        "arguments": ["lsp-proxy"]
+      }
+    }
+  }
+}
