@@ -1,6 +1,7 @@
 import { Hono } from 'hono';
-import { cors } from 'hono/cors';
 import { pinoLogger } from 'hono-pino';
+import { cors } from 'hono/cors';
+
 import { env } from './env.ts';
 import { logger } from './lib/logger.ts';
 

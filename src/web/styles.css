@@ -1,9 +1,9 @@
-@import "tailwindcss" source("./");
-@import "tw-animate-css";
+@import 'tailwindcss' source('./');
+@import 'tw-animate-css';
 
 @theme inline {
   --font-sans:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -138,6 +138,6 @@
   body {
     @apply bg-background text-foreground;
     font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 }

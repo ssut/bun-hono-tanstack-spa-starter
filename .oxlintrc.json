@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "env": {
+    "builtin": true,
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "Bun": "readonly"
+  },
+  "plugins": ["unicorn", "typescript", "oxc"],
+  "ignorePatterns": ["src/web/routeTree.gen.ts"]
+}

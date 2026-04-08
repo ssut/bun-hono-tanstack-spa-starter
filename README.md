@@ -10,7 +10,7 @@ A minimal SPA starter template optimized for AI-assisted development with Claude
 - **Database**: PostgreSQL via Kysely + postgres.js
 - **Styling**: Tailwind CSS v4 + shadcn/ui
 - **Validation**: Zod v4
-- **Tooling**: Biome (lint/format), tsgo (typecheck), React Compiler
+- **Tooling**: oxfmt (format), oxlint (lint), tsgo (typecheck), React Compiler
 
 ## Setup
 
@@ -30,7 +30,10 @@ bun run dev:web    # web only
 ## Other Commands
 
 ```bash
-bun run check      # lint + typecheck
+bun run fix        # format and apply lint fixes
+bun run format     # format with oxfmt
+bun run lint       # lint with oxlint and apply safe fixes
+bun run check      # format check + lint check + typecheck
 bun run migrate    # run database migrations
 bun run build:web  # production build
 bun run start      # production server
